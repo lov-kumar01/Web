@@ -20,7 +20,7 @@ app.use(express.static('public'));
 app.use(cookieParser());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/authDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/authDB')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
@@ -139,7 +139,7 @@ app.post('/add', async (req, res) => {
 app.put('/update', async (req, res) => {
 
     // console.log("req", req);
-    console.log("req body", req.body);
+    // console.log("req body", req.body);
     const {id, username, courses, year, fee,session} = req.body;
 //    const id = req.body.id;
    
