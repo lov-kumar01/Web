@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>User Profile</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Session</th>
+            <th>Year</th>
+            <th>Course</th>
+            <th>Fee</th>
+        </tr>
+
+        <tr>
+            <h1><%= user.username %></h1> 
+            <h1><%= user.session %></h1> 
+            <h1><%= user.year %></h1> 
+            <h1><%= user.courses %></h1> 
+            <h1><%= user.fee %></h1> 
+        </tr>
+
+    </table>
+</body>
+</html>
